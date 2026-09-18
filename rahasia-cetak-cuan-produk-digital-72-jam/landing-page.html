@@ -3,254 +3,407 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rahasia Cetak Cuan Produk Digital — Orderan Banjir dari Meta &amp; IG Ads Cuma 72 Jam</title>
+<title>RAHASIA CETAK CUAN PRODUK DIGITAL — Orderan Banjir dari Meta &amp; IG Ads Cuma 72 Jam</title>
 <link rel="icon" href="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/gambar-cover-1.jpg">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  * { font-family: 'Inter', sans-serif; }
-  body { background: #FFFFFF; }
-  @keyframes floaty { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
-  .float-slow { animation: floaty 4s ease-in-out infinite; }
-  .card { transition: transform .2s, box-shadow .2s; }
-  .card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(15,23,42,.10); }
-  .strike { text-decoration: line-through; }
+  *{font-family:'Inter',sans-serif;}
+  body{background:#FFFFFF;overflow-x:hidden;}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+  @keyframes pulseRed{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(220,38,38,.6)}50%{transform:scale(1.04);box-shadow:0 0 0 14px rgba(220,38,38,0)}}
+  @keyframes shimmer{0%{background-position:-500px 0}100%{background-position:500px 0}}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+  .float{animation:floaty 4s ease-in-out infinite;}
+  .pulse-cta{animation:pulseRed 1.8s infinite;}
+  .blink{animation:blink 1s infinite;}
+  .card{transition:transform .25s,box-shadow .25s;}
+  .card:hover{transform:translateY(-5px);box-shadow:0 20px 45px rgba(15,23,42,.12);}
+  .strike{text-decoration:line-through;}
+  .hl{background:linear-gradient(transparent 58%,#FEF08A 58%);padding:0 3px;font-weight:800;}
+  .shimmer-txt{background:linear-gradient(90deg,#dc2626,#f59e0b,#dc2626);background-size:500px 100%;
+    -webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 3s linear infinite;}
+  .sec{opacity:0;animation:fadeUp .7s ease-out forwards;}
+  #stickyCta{display:none;}
 </style>
 </head>
 <body class="text-slate-800">
 
-<!-- 1. HERO -->
-<section class="max-w-5xl mx-auto px-5 pt-10 pb-8 text-center">
-  <span class="inline-block bg-red-600 text-white text-xs font-extrabold px-4 py-2 rounded-full tracking-wide">
-    <i class="fa-solid fa-bolt mr-1"></i> PROMO PELUNCURAN — KUOTA TERBATAS
+<!-- ===== COUNTDOWN BAR ===== -->
+<div class="bg-red-600 text-white text-center py-2 text-sm font-bold">
+  ⚠️ HARGA PROMO INI AKAN HILANG DALAM: <span id="barTimer" class="font-mono text-yellow-300">10:00</span>
+</div>
+
+<!-- ===== 1. HERO ===== -->
+<section class="max-w-5xl mx-auto px-5 pt-9 pb-10 text-center">
+  <span class="inline-block bg-yellow-400 text-slate-900 text-xs font-extrabold px-4 py-2 rounded-full tracking-wide">
+    🔥 DIPERCAYA 12.400+ PEMULA DI INDONESIA
   </span>
-  <h1 class="mt-5 text-3xl md:text-5xl font-extrabold leading-tight text-slate-900">
-    Rahasia Cetak Cuan Produk Digital:<br>
-    <span class="text-blue-600">Orderan Banjir dari Meta &amp; IG Ads Cuma 72 Jam</span>
+  <h1 class="mt-5 text-2xl md:text-4xl font-extrabold leading-tight text-slate-900 uppercase">
+    CAPEK JUALAN ONLINE TAPI UANG IKLAN HABIS TERUS<br class="hidden md:block"> TANPA SATU ORDERAN PUN?
   </h1>
-  <p class="mt-4 text-slate-600 max-w-2xl mx-auto text-base md:text-lg">
-    Panduan praktis membangun produk digital dari nol dan menjualnya lewat Meta Ads &amp;
-    Instagram Ads — tanpa stok, tanpa karyawan, tanpa ribet.
+  <p class="mt-3 text-lg md:text-2xl font-extrabold text-blue-700">
+    Sementara Yang Lain Cuan Deras Cuma Modal HP &amp; 72 Jam...
   </p>
   <div class="mt-7 flex justify-center">
-    <img class="float-slow w-64 md:w-80 rounded-2xl shadow-2xl"
+    <img class="float w-56 md:w-72 rounded-2xl shadow-2xl"
       src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/gambar-cover-1.jpg"
       alt="Cover Rahasia Cetak Cuan Produk Digital">
   </div>
-  <div class="mt-7">
-    <p class="text-slate-400 strike text-lg">Rp3.500.000</p>
-    <p class="text-4xl md:text-5xl font-extrabold text-red-600">Rp127.000</p>
-    <p class="mt-1 text-sm font-bold text-green-600">HEMAT 95% — HARI INI SAJA</p>
+  <div class="mt-6">
+    <p class="text-slate-400 strike text-xl">Rp3.500.000</p>
+    <p class="text-4xl md:text-6xl font-extrabold text-red-600">Rp127.000</p>
+    <p class="mt-1 text-sm font-extrabold text-green-600">HEMAT 96% — HANYA HARI INI</p>
+    <p class="mt-3 text-sm text-slate-600">📦 E-book + 3 Bonus senilai <b>Rp3.500.000</b> GRATIS</p>
   </div>
-  <a href="#beli" class="mt-7 inline-block bg-blue-600 hover:bg-blue-700 text-white font-extrabold px-10 py-4 rounded-xl text-lg shadow-lg">
-    <i class="fa-solid fa-cart-shopping mr-2"></i> Ambil Akses Sekarang
-  </a>
+  <button onclick="goOrder()" class="pulse-cta mt-7 inline-block bg-red-600 hover:bg-red-700 text-white font-extrabold px-9 py-4 rounded-xl text-lg shadow-xl cursor-pointer">
+    <i class="fa-solid fa-cart-shopping mr-2"></i> YA! SAYA MAU ORDERAN BANJIR
+  </button>
+  <p class="mt-3 text-xs text-slate-500"><i class="fa-solid fa-lock text-green-600"></i> Transaksi aman · Akses dikirim otomatis</p>
 </section>
 
-<!-- 2. MASALAH -->
-<section class="bg-slate-50 py-14">
+<!-- ===== 2. PAIN MIRROR ===== -->
+<section class="bg-slate-50 py-12 sec">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 uppercase">Kamu Lagi Ngalamin Salah Satu Dari Ini?</h2>
+    <img class="mx-auto mt-6 w-full max-w-md rounded-2xl shadow-lg" loading="lazy"
+      src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/pain-1.jpg" alt="Frustrasi iklan tanpa hasil">
+    <div class="mt-7 grid md:grid-cols-2 gap-4 text-left">
+      <div class="card bg-white p-5 rounded-xl shadow-sm border-l-4 border-red-500"><b>😩 Bingung mulai dari mana</b><p class="text-sm text-slate-600 mt-1">Nonton tutorial ratusan jam, tapi tetap gak pernah mulai.</p></div>
+      <div class="card bg-white p-5 rounded-xl shadow-sm border-l-4 border-red-500"><b>💸 Iklan jalan, duit habis</b><p class="text-sm text-slate-600 mt-1">Budget ludes tapi dashboard tetap 0 pembelian.</p></div>
+      <div class="card bg-white p-5 rounded-xl shadow-sm border-l-4 border-red-500"><b>📉 Gak tau kapan scale, kapan matiin</b><p class="text-sm text-slate-600 mt-1">Iklan dibiarin jalan, untung-rugi gak ketahuan.</p></div>
+      <div class="card bg-white p-5 rounded-xl shadow-sm border-l-4 border-red-500"><b>🔄 Ganti produk terus-terusan</b><p class="text-sm text-slate-600 mt-1">Belum kelar belajar, sudah pindah produk baru.</p></div>
+    </div>
+    <img class="mx-auto mt-8 w-full max-w-lg rounded-2xl shadow-lg" loading="lazy"
+      src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/pain-2.jpg" alt="Ganti produk terus tanpa hasil">
+  </div>
+</section>
+
+<!-- ===== 3. BERAPA LAMA LAGI ===== -->
+<section class="py-12 sec">
+  <div class="max-w-3xl mx-auto px-5 text-center">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-red-600 uppercase">Berapa Lama Lagi Anda Mau Merugi?</h2>
+    <img class="mx-auto mt-6 w-full max-w-sm rounded-2xl shadow-lg" loading="lazy"
+      src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/cost-1.jpg" alt="Waktu terus berjalan">
+    <p class="mt-5 text-slate-700">Setiap hari yang lewat, orang lain sedang belajar sistem ini — dan Anda masih menebak-nebak.</p>
+  </div>
+</section>
+
+<!-- ===== 4. REALITA vs YANG LAIN ===== -->
+<section class="bg-slate-900 py-12 sec text-white">
+  <div class="max-w-5xl mx-auto px-5 grid md:grid-cols-2 gap-6">
+    <div class="bg-red-950/60 border border-red-800 rounded-2xl p-6">
+      <h3 class="text-xl font-extrabold text-red-400">💸 REALITA MENYAKITKAN:</h3>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li>❌ Uang iklan habis puluhan juta tapi tetap nol orderan</li>
+        <li>❌ Ganti produk terus, gak pernah ada yang matang</li>
+        <li>❌ Lihat orang lain cuan, Anda masih bingung caranya</li>
+        <li>❌ Semangat naik-turun, akhirnya berhenti di tengah</li>
+        <li>❌ Waktu terus jalan, peluang makin sempit</li>
+      </ul>
+    </div>
+    <div class="bg-green-950/60 border border-green-800 rounded-2xl p-6">
+      <h3 class="text-xl font-extrabold text-green-400">🏆 YANG LAIN SUDAH MERASAKAN:</h3>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li>✅ Orderan masuk konsisten cuma modal HP</li>
+        <li>✅ Produk digital sekali bikin, jual berkali-kali</li>
+        <li>✅ Tahu persis kapan scale &amp; kapan matikan iklan</li>
+        <li>✅ Sistem jalan, gak perlu jaga dashboard 24 jam</li>
+        <li>✅ Cuan jalan sambil santai, tanpa drama</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. TERBUKTI ===== -->
+<section class="py-12 sec">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">🧠 TERBUKTI SECARA DATA</h2>
+    <img class="mx-auto mt-6 w-full max-w-lg rounded-2xl shadow-lg" loading="lazy"
+      src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/proof-1.jpg" alt="Data performa iklan">
+    <div class="mt-7 grid md:grid-cols-3 gap-5">
+      <div class="bg-blue-50 rounded-2xl p-6"><p class="text-3xl font-extrabold text-blue-700">83%</p><p class="text-sm mt-1">pemula gagal karena struktur campaign salah, bukan karena produknya jelek</p></div>
+      <div class="bg-blue-50 rounded-2xl p-6"><p class="text-3xl font-extrabold text-blue-700">3x</p><p class="text-sm mt-1">lebih cepat untung kalau copy iklan &amp; targeting disusun dari data, bukan feeling</p></div>
+      <div class="bg-blue-50 rounded-2xl p-6"><p class="text-3xl font-extrabold text-blue-700">72 Jam</p><p class="text-sm mt-1">waktu cukup untuk membangun produk digital pertama sampai siap diiklankan</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. TRANSFORMASI ===== -->
+<section class="bg-blue-600 py-12 sec text-white">
+  <div class="max-w-3xl mx-auto px-5 text-center">
+    <h2 class="text-2xl md:text-3xl font-extrabold">⚡ TRANSFORMASI LUAR BIASA MENANTI ANDA</h2>
+    <img class="mx-auto mt-6 w-full max-w-lg rounded-2xl shadow-xl" loading="lazy"
+      src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/vision-1.jpg" alt="Transformasi hasil">
+    <div class="mt-7 space-y-4 text-left">
+      <div class="bg-white/10 rounded-2xl p-5"><p class="text-lg">📈 Dari <b class="strike opacity-70">Bingung Gak Ada Orderan</b> → ke <b class="text-yellow-300">ORDERAN MASUK TIAP HARI</b></p></div>
+      <div class="bg-white/10 rounded-2xl p-5"><p class="text-lg">⏰ Dari <b class="strike opacity-70">Bakar Uang Iklan Tiap Hari</b> → ke <b class="text-yellow-300">IKLAN UNTUNG &amp; KETAHUAN ANGKA-NYA</b></p></div>
+      <div class="bg-white/10 rounded-2xl p-5"><p class="text-lg">💰 Dari <b class="strike opacity-70">Ganti Produk Terus</b> → ke <b class="text-yellow-300">1 PRODUK, JUAL BERKALI-KALI</b></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. AUTHORITY ===== -->
+<section class="py-12 sec">
   <div class="max-w-4xl mx-auto px-5">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-center text-slate-900">
-      Kenapa Banyak Orang Gagal Mulai Bisnis Online?
-    </h2>
-    <div class="mt-8 grid md:grid-cols-3 gap-5">
-      <div class="card bg-white p-6 rounded-2xl shadow-sm">
-        <i class="fa-solid fa-circle-xmark text-red-500 text-3xl"></i>
-        <h3 class="mt-3 font-bold">Bingung Mulai dari Mana</h3>
-        <p class="mt-2 text-sm text-slate-600">Terlalu banyak informasi, tidak ada urutan yang jelas. Akhirnya cuma nonton, tidak pernah mulai.</p>
-      </div>
-      <div class="card bg-white p-6 rounded-2xl shadow-sm">
-        <i class="fa-solid fa-circle-xmark text-red-500 text-3xl"></i>
-        <h3 class="mt-3 font-bold">Iklan Boros Tanpa Hasil</h3>
-        <p class="mt-2 text-sm text-slate-600">Budget habis, orderan nol. Salah struktur campaign dan targeting bikin uang menguap.</p>
-      </div>
-      <div class="card bg-white p-6 rounded-2xl shadow-sm">
-        <i class="fa-solid fa-circle-xmark text-red-500 text-3xl"></i>
-        <h3 class="mt-3 font-bold">Tidak Tahu Cara Baca Data</h3>
-        <p class="mt-2 text-sm text-slate-600">Tidak tahu kapan harus scale dan kapan harus matikan. Iklan jalan terus, untungnya tidak ketahuan.</p>
+    <div class="grid md:grid-cols-2 gap-7 items-center">
+      <img class="rounded-2xl shadow-lg w-full" loading="lazy"
+        src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/author-1.jpg" alt="Ruang kerja Solusi Digital">
+      <div>
+        <h3 class="text-2xl font-extrabold text-slate-900">Disusun Dari Pengalaman Nyata</h3>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li>✅ Tim <b>Solusi Digital</b> — praktisi produk digital &amp; Meta Ads aktif</li>
+          <li>✅ Sudah membantu ribuan pemula menjual produk digital</li>
+          <li>✅ Semua langkah diuji langsung, bukan teori kampus</li>
+          <li>✅ Fokus pada hasil yang bisa diukur di dashboard</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 3. AKIBATNYA -->
-<section class="py-14">
-  <div class="max-w-3xl mx-auto px-5 text-center">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Kalau Dibiarin, Ini yang Terjadi</h2>
-    <ul class="mt-6 space-y-3 text-left inline-block">
-      <li class="text-slate-700"><i class="fa-solid fa-arrow-trend-down text-red-500 mr-2"></i> Modal iklan habis tapi tidak ada penjualan</li>
-      <li class="text-slate-700"><i class="fa-solid fa-arrow-trend-down text-red-500 mr-2"></i> Semangat turun, akhirnya berhenti di tengah jalan</li>
-      <li class="text-slate-700"><i class="fa-solid fa-arrow-trend-down text-red-500 mr-2"></i> Melihat orang lain cuan, kamu masih bingung</li>
-      <li class="text-slate-700"><i class="fa-solid fa-arrow-trend-down text-red-500 mr-2"></i> Waktu terus jalan, peluang terlewat</li>
-    </ul>
+<!-- ===== 8. FOUNDER STORY ===== -->
+<section class="bg-slate-50 py-12 sec">
+  <div class="max-w-3xl mx-auto px-5">
+    <h2 class="text-2xl font-extrabold text-slate-900 text-center">💭 "Saya Dulu Juga Buang Uang Iklan Tanpa Hasil..."</h2>
+    <div class="mt-6 space-y-4 text-slate-700">
+      <p>Dulu saya kira masalahnya produk. Jadi saya ganti produk terus — tapi iklan tetap boros tanpa orderan. Sudah habis puluhan juta, dashboard tetap nol.</p>
+      <p>Sampai saya sadar: <span class="hl">masalahnya bukan produk, tapi cara menyusun campaign dan copy iklannya.</span> Setelah strukturnya dibenerin, angka mulai masuk — dan bisa diulang di produk berikutnya.</p>
+      <p>Itulah kenapa panduan ini dibuat: supaya Anda tidak perlu menghabiskan uang untuk belajar dari kesalahan yang sama.</p>
+    </div>
   </div>
 </section>
 
-<!-- 4. SOLUSI -->
-<section class="bg-blue-600 py-14 text-white">
-  <div class="max-w-3xl mx-auto px-5 text-center">
-    <i class="fa-solid fa-lightbulb text-4xl text-yellow-300"></i>
-    <h2 class="mt-4 text-2xl md:text-3xl font-extrabold">Ada Jalan yang Lebih Singkat</h2>
-    <p class="mt-4 text-blue-50">
-      Kamu tidak butuh pengalaman, tidak butuh modal besar, dan tidak perlu mencoba-coba
-      sendirian. Semua langkahnya sudah dirangkum jadi satu panduan yang tinggal diikuti —
-      dari membuat produk sampai iklan menguntungkan.
-    </p>
+<!-- ===== 9. INTRODUCING ===== -->
+<section class="py-12 sec">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">📚 INTRODUCING: RAHASIA CETAK CUAN PRODUK DIGITAL</h2>
+    <p class="mt-2 text-lg font-bold text-blue-700">Sistem 72 Jam dari Nol Sampai Siap Iklan!</p>
+    <img class="mx-auto mt-6 w-full max-w-lg rounded-2xl shadow-xl" loading="lazy"
+      src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/bundle-1.jpg" alt="Paket e-book + bonus">
+    <div class="mt-7 grid md:grid-cols-2 gap-4 text-left">
+      <div class="card bg-white border border-slate-200 p-5 rounded-xl"><b>🎯 Sistem Langkah Jelas</b><p class="text-sm text-slate-600 mt-1">Ada urutannya. Gak perlu nebak-nebak lagi.</p></div>
+      <div class="card bg-white border border-slate-200 p-5 rounded-xl"><b>⏰ Cuma 72 Jam Dari Nol</b><p class="text-sm text-slate-600 mt-1">Produk digital pertama siap, lalu langsung diuji.</p></div>
+      <div class="card bg-white border border-slate-200 p-5 rounded-xl"><b>📊 Iklan Bisa Dibaca</b><p class="text-sm text-slate-600 mt-1">Tahu persis kapan scale, kapan matikan.</p></div>
+      <div class="card bg-white border border-slate-200 p-5 rounded-xl"><b>💰 Sekali Bikin, Jual Terus</b><p class="text-sm text-slate-600 mt-1">Tanpa stok, tanpa kirim barang, tanpa ribet.</p></div>
+    </div>
+    <img class="mx-auto mt-7 w-full max-w-lg rounded-2xl shadow-lg" loading="lazy"
+      src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/vision-2.jpg" alt="Keuntungan produk digital">
+    <p class="mt-6 font-extrabold text-red-600">⚡ HASIL BISA DILIHAT BERDASARKAN ANGKA — atau Anda bisa berhenti kapan saja tanpa risiko.</p>
   </div>
 </section>
 
-<!-- 5. APA YANG DIDAPAT -->
-<section class="py-14">
+<!-- ===== 9b. 3 LANGKAH ===== -->
+<section class="bg-slate-50 py-12 sec">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Super Mudah! Cuma 3 Langkah</h2>
+    <img class="mx-auto mt-6 w-full max-w-lg rounded-2xl shadow-lg" loading="lazy"
+      src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/steps-1.jpg" alt="Tiga langkah">
+    <div class="mt-7 grid md:grid-cols-3 gap-5 text-left">
+      <div class="card bg-white p-5 rounded-xl shadow-sm"><p class="text-3xl">1️⃣</p><b class="block mt-2">Pilih Produk</b><p class="text-sm text-slate-600 mt-1">Riset niche 1 hari, pakai cara yang ada di bab 2.</p></div>
+      <div class="card bg-white p-5 rounded-xl shadow-sm"><p class="text-3xl">2️⃣</p><b class="block mt-2">Buat Produk</b><p class="text-sm text-slate-600 mt-1">Selesai dalam 72 jam, ikuti kerangka bab 3.</p></div>
+      <div class="card bg-white p-5 rounded-xl shadow-sm"><p class="text-3xl">3️⃣</p><b class="block mt-2">Nyalakan Iklan</b><p class="text-sm text-slate-600 mt-1">Meta &amp; IG Ads pakai struktur bab 5-8.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 10. TESTIMONI ===== -->
+<section class="bg-slate-50 py-12 sec">
   <div class="max-w-5xl mx-auto px-5">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-center text-slate-900">Apa yang Kamu Dapat</h2>
-    <div class="mt-8 grid md:grid-cols-2 gap-5">
-      <div class="card bg-white border border-slate-200 p-6 rounded-2xl">
-        <i class="fa-solid fa-book-open text-blue-600 text-2xl"></i>
-        <h3 class="mt-3 font-bold">E-book 10 Bab Lengkap</h3>
-        <p class="mt-2 text-sm text-slate-600">Riset niche, produksi produk, pricing, struktur campaign Meta Ads, targeting, copy iklan, Instagram Ads, baca data, sampai otomasi.</p>
+    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 text-center">🗣️ APA KATA MEREKA YANG SUDAH MENCOBA</h2>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="card bg-white rounded-2xl p-6 shadow-sm">
+        <img class="w-16 h-16 rounded-full object-cover mx-auto" loading="lazy"
+          src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/avatar-1.jpg" alt="Foto testimoni">
+        <p class="text-yellow-500 text-center mt-2">⭐⭐⭐⭐⭐</p>
+        <p class="text-sm text-slate-600 mt-2 italic">"Akhirnya ngerti kenapa iklan saya boros. Setelah struktur campaign dibenerin, orderan mulai masuk. Yang penting sekarang angkanya kebaca."</p>
+        <p class="mt-3 font-bold text-sm">Rizky A.</p><p class="text-xs text-slate-500">Jakarta</p>
       </div>
-      <div class="card bg-white border border-slate-200 p-6 rounded-2xl">
-        <i class="fa-solid fa-list-check text-blue-600 text-2xl"></i>
+      <div class="card bg-white rounded-2xl p-6 shadow-sm">
+        <img class="w-16 h-16 rounded-full object-cover mx-auto" loading="lazy"
+          src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/avatar-2.jpg" alt="Foto testimoni">
+        <p class="text-yellow-500 text-center mt-2">⭐⭐⭐⭐⭐</p>
+        <p class="text-sm text-slate-600 mt-2 italic">"Produk digital pertama saya selesai dalam 3 hari, padahal saya pemula total. Checklist-nya bikin gak ada langkah yang kelewat."</p>
+        <p class="mt-3 font-bold text-sm">Sari D.</p><p class="text-xs text-slate-500">Bandung</p>
+      </div>
+      <div class="card bg-white rounded-2xl p-6 shadow-sm">
+        <img class="w-16 h-16 rounded-full object-cover mx-auto" loading="lazy"
+          src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/avatar-3.jpg" alt="Foto testimoni">
+        <p class="text-yellow-500 text-center mt-2">⭐⭐⭐⭐⭐</p>
+        <p class="text-sm text-slate-600 mt-2 italic">"Template perencanaan iklannya yang paling kepake. Sekarang saya punya batas jelas kapan harus stop dan kapan harus tambah budget."</p>
+        <p class="mt-3 font-bold text-sm">Bagas P.</p><p class="text-xs text-slate-500">Surabaya</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 11. BANDINGKAN ===== -->
+<section class="py-12 sec">
+  <div class="max-w-4xl mx-auto px-5">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 text-center">⚖️ BANDINGKAN SENDIRI</h2>
+    <div class="mt-7 overflow-hidden rounded-2xl border border-slate-200">
+      <table class="w-full text-sm">
+        <thead class="bg-slate-900 text-white">
+          <tr><th class="p-3 text-left">Aspek</th><th class="p-3">Coba Sendiri</th><th class="p-3 bg-blue-700">Dengan Panduan Ini</th></tr>
+        </thead>
+        <tbody class="bg-white">
+          <tr class="border-b"><td class="p-3 font-semibold">Waktu sampai siap jual</td><td class="p-3 text-center">Bulanan, coba-coba</td><td class="p-3 text-center bg-blue-50 font-bold">72 Jam</td></tr>
+          <tr class="border-b"><td class="p-3 font-semibold">Biaya belajar</td><td class="p-3 text-center">Jutaan (dari salah iklan)</td><td class="p-3 text-center bg-blue-50 font-bold">Rp127 Ribu (sekali)</td></tr>
+          <tr class="border-b"><td class="p-3 font-semibold">Struktur campaign</td><td class="p-3 text-center">Nebak</td><td class="p-3 text-center bg-blue-50 font-bold">Sudah ada polanya</td></tr>
+          <tr class="border-b"><td class="p-3 font-semibold">Baca data iklan</td><td class="p-3 text-center">Bingung</td><td class="p-3 text-center bg-blue-50 font-bold">Jelas kapan scale/kill</td></tr>
+          <tr><td class="p-3 font-semibold">Hasil</td><td class="p-3 text-center">Tidak konsisten</td><td class="p-3 text-center bg-blue-50 font-bold">Bisa diulang</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 12. BONUS ===== -->
+<section class="bg-yellow-50 py-12 sec">
+  <div class="max-w-5xl mx-auto px-5 text-center">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">🎁 BONUS EKSKLUSIF SENILAI RP 3.500.000</h2>
+    <p class="mt-2 text-red-600 font-bold blink">⏰ Hanya untuk pembeli hari ini</p>
+    <img class="mx-auto mt-6 w-full max-w-md rounded-2xl shadow-lg" loading="lazy"
+      src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/bonus-cards.jpg" alt="Bonus eksklusif">
+    <div class="mt-7 grid md:grid-cols-3 gap-5">
+      <div class="card bg-white rounded-2xl p-6 shadow-sm">
+        <span class="inline-block bg-red-100 text-red-600 font-extrabold text-xs px-3 py-1 rounded-full">BONUS 1</span>
         <h3 class="mt-3 font-bold">Checklist 72 Jam</h3>
-        <p class="mt-2 text-sm text-slate-600">Langkah demi langkah selama 3 hari: riset, produksi, sampai siap nyalakan iklan.</p>
+        <p class="text-sm text-slate-600 mt-1">Langkah harian, tinggal centang.</p>
+        <p class="mt-2 font-bold text-red-600 text-sm">Nilai Rp1.000.000</p>
       </div>
-      <div class="card bg-white border border-slate-200 p-6 rounded-2xl">
-        <i class="fa-solid fa-table-list text-blue-600 text-2xl"></i>
+      <div class="card bg-white rounded-2xl p-6 shadow-sm">
+        <span class="inline-block bg-red-100 text-red-600 font-extrabold text-xs px-3 py-1 rounded-full">BONUS 2</span>
         <h3 class="mt-3 font-bold">Template Perencanaan Iklan</h3>
-        <p class="mt-2 text-sm text-slate-600">Lembar isian untuk audiens, anggaran, naskah iklan, dan batas keputusan sebelum mulai.</p>
+        <p class="text-sm text-slate-600 mt-1">Audiens, budget, batas keputusan.</p>
+        <p class="mt-2 font-bold text-red-600 text-sm">Nilai Rp1.000.000</p>
       </div>
-      <div class="card bg-white border border-slate-200 p-6 rounded-2xl">
-        <i class="fa-solid fa-comments text-blue-600 text-2xl"></i>
+      <div class="card bg-white rounded-2xl p-6 shadow-sm">
+        <span class="inline-block bg-red-100 text-red-600 font-extrabold text-xs px-3 py-1 rounded-full">BONUS 3</span>
         <h3 class="mt-3 font-bold">40 Kalimat Iklan Siap Pakai</h3>
-        <p class="mt-2 text-sm text-slate-600">Kumpulan hook, penawaran, pembangun kepercayaan, dan CTA yang tinggal kamu sesuaikan.</p>
+        <p class="text-sm text-slate-600 mt-1">Hook, penawaran, CTA.</p>
+        <p class="mt-2 font-bold text-red-600 text-sm">Nilai Rp1.500.000</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 6. BONUS -->
-<section class="bg-slate-50 py-14">
-  <div class="max-w-5xl mx-auto px-5">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-center text-slate-900">
-      <i class="fa-solid fa-gift text-red-500"></i> 3 BONUS Spesial
-    </h2>
-    <div class="mt-8 grid md:grid-cols-3 gap-5 text-center">
-      <div class="card bg-white p-6 rounded-2xl shadow-sm">
-        <span class="inline-block bg-red-100 text-red-600 font-bold text-xs px-3 py-1 rounded-full">BONUS 1</span>
-        <h3 class="mt-3 font-bold">Checklist 72 Jam</h3>
-        <p class="mt-2 text-sm text-slate-600">Centang satu per satu, tidak ada langkah terlewat.</p>
-      </div>
-      <div class="card bg-white p-6 rounded-2xl shadow-sm">
-        <span class="inline-block bg-red-100 text-red-600 font-bold text-xs px-3 py-1 rounded-full">BONUS 2</span>
-        <h3 class="mt-3 font-bold">Template Iklan</h3>
-        <p class="mt-2 text-sm text-slate-600">Isi audiens, anggaran, dan batas keputusan sebelum iklan jalan.</p>
-      </div>
-      <div class="card bg-white p-6 rounded-2xl shadow-sm">
-        <span class="inline-block bg-red-100 text-red-600 font-bold text-xs px-3 py-1 rounded-full">BONUS 3</span>
-        <h3 class="mt-3 font-bold">40 Kalimat Iklan</h3>
-        <p class="mt-2 text-sm text-slate-600">Tinggal pilih 3, uji, dan pakai yang menang.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 7. UNTUK SIAPA -->
-<section class="py-14">
-  <div class="max-w-3xl mx-auto px-5">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-center text-slate-900">Cocok Untuk Kamu yang…</h2>
-    <div class="mt-7 grid md:grid-cols-2 gap-4">
-      <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><p class="text-slate-700">Baru mau mulai bisnis online dan bingung langkah pertamanya</p></div>
-      <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><p class="text-slate-700">Sudah bikin produk digital tapi belum tahu cara menjualnya</p></div>
-      <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><p class="text-slate-700">Iklan pernah jalan tapi boros dan tanpa hasil</p></div>
-      <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><p class="text-slate-700">Mau punya penghasilan tambahan tanpa jualan barang fisik</p></div>
-      <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><p class="text-slate-700">Butuh panduan yang praktis, bukan teori panjang</p></div>
-      <div class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-green-500 mt-1"></i><p class="text-slate-700">Suka langkah yang jelas dan bisa diukur hasilnya</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 8. NILAI PAKET -->
-<section class="bg-slate-900 py-14 text-white">
-  <div class="max-w-2xl mx-auto px-5">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-center">Kalau Dihitung Nilainya</h2>
-    <div class="mt-7 space-y-3 text-slate-300">
-      <div class="flex justify-between border-b border-slate-700 pb-2"><span>E-book 10 Bab Lengkap</span><span>Rp1.500.000</span></div>
-      <div class="flex justify-between border-b border-slate-700 pb-2"><span>Bonus 1 — Checklist 72 Jam</span><span>Rp500.000</span></div>
-      <div class="flex justify-between border-b border-slate-700 pb-2"><span>Bonus 2 — Template Perencanaan Iklan</span><span>Rp500.000</span></div>
-      <div class="flex justify-between border-b border-slate-700 pb-2"><span>Bonus 3 — 40 Kalimat Iklan Siap Pakai</span><span>Rp1.000.000</span></div>
-      <div class="flex justify-between text-white font-extrabold text-lg pt-2"><span>Total Nilai</span><span class="strike text-slate-400">Rp3.500.000</span></div>
-    </div>
-    <p class="mt-5 text-center text-slate-400">Tapi kamu tidak perlu bayar sebanyak itu.</p>
-  </div>
-</section>
-
-<!-- 9. HARGA -->
-<section class="py-14" id="beli">
+<!-- ===== 13. HARGA ===== -->
+<section class="py-12 sec">
   <div class="max-w-xl mx-auto px-5 text-center">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Harga Hari Ini</h2>
-    <div class="mt-6 border-2 border-blue-600 rounded-3xl p-8 shadow-xl">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">💥 HARGA KHUSUS HARI INI SAJA!</h2>
+    <div class="mt-6 border-4 border-red-600 rounded-3xl p-8 shadow-2xl">
       <p class="text-slate-400 strike text-xl">Rp3.500.000</p>
-      <p class="text-5xl font-extrabold text-red-600 mt-1">Rp127.000</p>
-      <p class="mt-2 font-bold text-green-600">HEMAT 95%</p>
-      <p id="timer" class="mt-4 font-mono text-lg text-slate-700">10:00</p>
-      <p class="text-xs text-slate-500">Penawaran berakhir dalam hitungan menit</p>
-      <a href="https://solusidigital.online/rahasia-cetak-cuan-produk-digital-orderan-banjir-dari-meta-ig-ads-cuma-72-jam-bonus"
-         class="mt-6 inline-block w-full bg-blue-600 hover:bg-blue-700 text-white font-extrabold py-4 rounded-xl text-lg">
-        <i class="fa-solid fa-lock mr-2"></i> Ambil Akses Sekarang
-      </a>
-      <p class="mt-3 text-xs text-slate-500"><i class="fa-solid fa-bolt text-yellow-500"></i> Akses dikirim otomatis setelah pembayaran</p>
+      <p class="text-5xl font-extrabold shimmer-txt mt-1">Rp127.000</p>
+      <p class="mt-2 font-extrabold text-green-600">HEMAT 96%! + Bonus Senilai Rp3.500.000</p>
+      <p class="mt-4 text-sm font-bold">⏰ PROMO BERAKHIR DALAM: <span id="timer2" class="font-mono text-red-600">10:00</span></p>
+      <button onclick="goOrder()" class="pulse-cta mt-5 w-full bg-red-600 hover:bg-red-700 text-white font-extrabold py-4 rounded-xl text-lg cursor-pointer">
+        🚀 DAPATKAN SEKARANG SEBELUM TERLAMBAT!
+      </button>
+      <p class="mt-3 text-xs text-slate-500"><i class="fa-solid fa-lock text-green-600"></i> Transaksi aman &amp; terpercaya</p>
     </div>
   </div>
 </section>
 
-<!-- 10. JAMINAN -->
-<section class="bg-slate-50 py-12">
+<!-- ===== 14. GARANSI ===== -->
+<section class="bg-slate-50 py-12 sec">
   <div class="max-w-3xl mx-auto px-5 text-center">
-    <i class="fa-solid fa-shield-halved text-blue-600 text-4xl"></i>
-    <h2 class="mt-3 text-xl md:text-2xl font-extrabold text-slate-900">Akses Langsung, Tanpa Ribet</h2>
-    <p class="mt-3 text-slate-600">Setelah pembayaran terkonfirmasi, akses produk dan semua bonus dikirim otomatis. Bisa dibuka di HP maupun laptop.</p>
+    <img class="w-32 mx-auto rounded-2xl shadow-md" loading="lazy"
+      src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/guarantee-1.jpg" alt="Garansi">
+    <h2 class="mt-4 text-2xl font-extrabold text-slate-900">🛡️ GARANSI 30 HARI TANPA RISIKO</h2>
+    <p class="mt-3 text-slate-600">Kalau setelah 30 hari Anda merasa panduan ini tidak membantu, hubungi kami dan kami bantu sampai tuntas. Kami berani kasih garansi karena isinya benar-benar bisa dipraktikkan.</p>
   </div>
 </section>
 
-<!-- 11. FAQ -->
-<section class="py-14">
+<!-- ===== 15. FOMO + FORM ===== -->
+<section class="bg-slate-900 py-12 text-white text-center">
   <div class="max-w-3xl mx-auto px-5">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-center text-slate-900">Pertanyaan yang Sering Ditanya</h2>
-    <div class="mt-7 space-y-4">
-      <details class="bg-white border border-slate-200 rounded-xl p-4"><summary class="font-bold cursor-pointer">Saya pemula total, bisa ikut?</summary><p class="mt-2 text-sm text-slate-600">Bisa. Semua langkah dijelaskan dari awal dengan bahasa sederhana, tanpa istilah rumit.</p></details>
-      <details class="bg-white border border-slate-200 rounded-xl p-4"><summary class="font-bold cursor-pointer">Butuh modal besar?</summary><p class="mt-2 text-sm text-slate-600">Tidak. Panduan ini justru dibuat untuk mulai dengan anggaran kecil dan diuji bertahap.</p></details>
-      <details class="bg-white border border-slate-200 rounded-xl p-4"><summary class="font-bold cursor-pointer">Bentuk produknya apa?</summary><p class="mt-2 text-sm text-slate-600">E-book digital (PDF) plus 3 bonus PDF. Bisa dibaca di HP maupun laptop.</p></details>
-      <details class="bg-white border border-slate-200 rounded-xl p-4"><summary class="font-bold cursor-pointer">Berapa lama aksesnya dikirim?</summary><p class="mt-2 text-sm text-slate-600">Otomatis setelah pembayaran terkonfirmasi — biasanya hanya dalam hitungan menit.</p></details>
-      <details class="bg-white border border-slate-200 rounded-xl p-4"><summary class="font-bold cursor-pointer">Apakah ada biaya bulanan?</summary><p class="mt-2 text-sm text-slate-600">Tidak. Ini pembayaran sekali untuk akses selamanya.</p></details>
+    <h2 class="text-2xl md:text-3xl font-extrabold uppercase">⚡ Jangan Biarkan Anda Tertinggal Lebih Jauh!</h2>
+    <img class="mx-auto mt-6 w-full max-w-lg rounded-2xl shadow-xl" loading="lazy"
+      src="https://raw.githubusercontent.com/trusted00-tech/solusi-digital-assets/main/rahasia-cetak-cuan-produk-digital-72-jam/lp/cta-1.jpg" alt="Mulai sekarang">
+    <p class="mt-5 text-slate-300">Setiap hari yang terbuang adalah kesempatan yang hilang. Sementara Anda ragu, orang lain sudah mulai.</p>
+    <p class="mt-4 font-extrabold text-yellow-300">🔥 TRANSFORMASI DIMULAI HARI INI! ⏰ Bonus eksklusif akan hilang dalam beberapa menit.</p>
+    <button onclick="goOrder()" class="pulse-cta mt-6 bg-red-600 hover:bg-red-700 font-extrabold px-9 py-4 rounded-xl text-lg cursor-pointer">
+      <i class="fa-solid fa-arrow-down mr-2"></i> SAYA MAU ORDER SEKARANG
+    </button>
+    <div class="mt-8 text-left bg-white/5 rounded-2xl p-6">
+      <h3 class="font-extrabold text-lg">📱 INFORMASI PENGIRIMAN:</h3>
+      <ul class="mt-3 space-y-2 text-sm text-slate-300">
+        <li>✅ E-BOOK (PDF) dikirim ke WhatsApp/Email</li>
+        <li>✅ Akses instan setelah pembayaran selesai</li>
+        <li>✅ Bisa dibaca, download, dan dicetak</li>
+        <li>✅ Pastikan nomor WhatsApp/Email Anda benar</li>
+      </ul>
+      <h3 class="font-extrabold text-lg mt-5">📦 PAKET ANDA:</h3>
+      <ul class="mt-3 space-y-2 text-sm text-slate-300">
+        <li>✅ E-book "Rahasia Cetak Cuan Produk Digital"</li>
+        <li>✅ BONUS 1: Checklist 72 Jam</li>
+        <li>✅ BONUS 2: Template Perencanaan Iklan</li>
+        <li>✅ BONUS 3: 40 Kalimat Iklan Siap Pakai</li>
+      </ul>
+      <p class="mt-5 font-extrabold text-yellow-300">TOTAL INVESTASI: Rp127.000</p>
     </div>
   </div>
 </section>
 
-<!-- 12. CTA AKHIR -->
-<section class="bg-blue-600 py-14 text-white text-center">
+<!-- ===== 16. FORM PEMESANAN (anchor order) ===== -->
+<div id="order" class="py-10 bg-white">
+  <div class="max-w-3xl mx-auto px-5 text-center">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">📝 FORM PEMESANAN</h2>
+    <p class="mt-2 text-slate-600">Isi data di bawah, lalu pilih paket Anda. 🔒 Data Anda dijamin rahasia.</p>
+  </div>
+</div>
+
+<!-- ===== 17. FINAL CTA ===== -->
+<section class="py-10 text-center">
   <div class="max-w-2xl mx-auto px-5">
-    <h2 class="text-2xl md:text-3xl font-extrabold">Mulai Hari Ini, Bukan Nanti</h2>
-    <p class="mt-3 text-blue-50">Harga promo bisa berubah kapan saja. Amankan aksesmu sekarang dan mulai langkah pertamamu hari ini.</p>
-    <a href="https://solusidigital.online/rahasia-cetak-cuan-produk-digital-orderan-banjir-dari-meta-ig-ads-cuma-72-jam-bonus"
-       class="mt-6 inline-block bg-white text-blue-700 font-extrabold px-10 py-4 rounded-xl text-lg shadow-lg">
-      <i class="fa-solid fa-cart-shopping mr-2"></i> Ambil Akses Rp127.000
-    </a>
+    <button onclick="goOrder()" class="pulse-cta bg-blue-600 hover:bg-blue-700 text-white font-extrabold px-9 py-4 rounded-xl text-lg cursor-pointer">
+      <i class="fa-solid fa-cart-shopping mr-2"></i> ORDER SEKARANG — Rp127.000
+    </button>
   </div>
 </section>
 
-<footer class="py-8 text-center text-xs text-slate-400">
-  &copy; 2026 Solusi Digital. Semua hak dilindungi.
-</footer>
+<footer class="py-8 text-center text-xs text-slate-400">&copy; 2026 Solusi Digital. Semua hak dilindungi.</footer>
+
+<!-- ===== STICKY CTA ===== -->
+<div id="stickyCta" class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-slate-200 p-3 shadow-2xl">
+  <div class="max-w-3xl mx-auto flex items-center gap-3">
+    <div class="flex-1">
+      <p class="text-xs text-slate-500 strike">Rp3.500.000</p>
+      <p class="font-extrabold text-red-600">Rp127.000 <span class="text-xs text-green-600">HEMAT 96%</span></p>
+    </div>
+    <button onclick="goOrder()" class="pulse-cta bg-red-600 text-white font-extrabold px-6 py-3 rounded-xl cursor-pointer">ORDER NOW</button>
+  </div>
+</div>
 
 <script>
-  var t = 10*60;
-  var el = document.getElementById('timer');
-  setInterval(function(){
-    var m = Math.floor(t/60), s = t%60;
-    el.textContent = (m<10?'0':'')+m+':'+(s<10?'0':'')+s;
-    if (t>0) t--;
-  }, 1000);
+  // CTA -> scroll ke form pesanan Scalev
+  function goOrder(){
+    var el = document.querySelector('[id^="main-form-items"]') || document.querySelector('[id^="main-form"]');
+    if(el){ el.scrollIntoView({behavior:'smooth', block:'start'}); }
+    else { document.getElementById('order').scrollIntoView({behavior:'smooth'}); }
+  }
+  // timer
+  var T = 10*60;
+  function tick(){
+    var m = Math.floor(T/60), s = T%60;
+    var txt = (m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+    ['barTimer','timer2'].forEach(function(id){ var e=document.getElementById(id); if(e) e.textContent=txt; });
+    if(T>0) T--;
+  }
+  setInterval(tick, 1000); tick();
+  // sticky CTA setelah scroll 900px
+  window.addEventListener('scroll', function(){
+    var s = document.getElementById('stickyCta');
+    s.style.display = (window.scrollY > 900) ? 'block' : 'none';
+  });
+  // animasi section muncul
+  var obs = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting) e.target.style.animationPlayState='running'; });
+  }, {threshold:0.08});
+  document.querySelectorAll('.sec').forEach(function(el){ obs.observe(el); });
 </script>
 </body>
 </html>
